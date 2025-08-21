@@ -1,0 +1,43 @@
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: linear-gradient(to right, #f7c6d9, #f3e7e9);
+  height: 200px;              /* donne une vraie hauteur à ton bandeau */
+  display: flex;              /* active Flexbox */
+  justify-content: center;    /* centre horizontalement */
+  align-items: center;        /* centre verticalement */
+}
+
+.logo {
+  height: 300px; /* ajuste la taille selon ton logo */
+  width: auto;   /* garde les proportions */
+}
+
+.btn {
+  display: inline-block;
+  background: #ff7fa2;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+/* .logo{
+  height: 300px;
+  width: 300px;
+  align-items: center ;
+   align-items: top ;
+} */
+.icon:hover{
+    opacity: 0.7;
+    color: #f7c6d9;
+}

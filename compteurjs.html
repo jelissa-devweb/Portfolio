@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Compteur JS</title>
+  <style>
+    body { text-align: center; font-family: Arial; margin-top: 50px; }
+    button { padding: 10px 20px; margin: 10px; border-radius: 8px; border: none; background: #ff7fa2; color: white; cursor: pointer; }
+    button:hover { opacity: 0.8; }
+  </style>
+</head>
+<body>
+  <h1>Mon Compteur</h1>
+  <p id="nombre">0</p>
+  <button onclick="ajouter()">+1</button>
+  <button onclick="retirer()">-1</button>
+
+  <script>
+    let nombre = 0;
+    function ajouter() {
+      nombre++;
+      document.getElementById("nombre").innerText = nombre;
+    }
+    function retirer() {
+      nombre--;
+      document.getElementById("nombre").innerText = nombre;
+    }
+  </script>
+</body>
+</html>

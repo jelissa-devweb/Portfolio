@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.todo-container {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 350px;
+}
+h1 { text-align: center; color: #333; }
+input { ... }          /* taille, bordures, arrondis */
+button { ... }         /* style bouton principal */
+button:hover { ... }   /* effet au survol */
+ul { list-style: none; padding: 0; margin-top: 20px; }
+li {
+  display: flex;              /* texte à gauche, bouton à droite */
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+li.completed {                /* quand on “termine” une tâche */
+  text-decoration: line-through;
+  color: gray;
+}
+.delete-btn {
+  background: #e74c3c;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.delete-btn:hover { background: #c0392b; }
